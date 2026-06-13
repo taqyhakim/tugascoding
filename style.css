@@ -266,3 +266,20 @@ div.sambutan1  {
     font-size: 20px;
     font-weight:bold;
 }
+
+/* footer */
+
+footer {
+
+    background-color:#0e2136;
+    text-align:center;
+    padding:1rem 0;
+    margin-top:3rem;
+    margin-botton:0;
+    color:#fff;
+
+}
+
+footer .social {
+
+}

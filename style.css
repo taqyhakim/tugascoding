@@ -1,6 +1,6 @@
 /* universal selector  */
 * { 
-    font-family:serif;
+    font-family:arial,sans-serif;
 }
 
 body {
@@ -269,12 +269,92 @@ div.sambutan1  {
 
 /* footer */
 
-footer {
-    background-color:#0e2136;
-    text-align:center;
-    padding:1rem 0;
-    margin-top:3rem;
-    margin-bottom:0px;
-    color:#fff;
+/* --- Reset dasar agar full width tanpa celah --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+
+/* --- Container Footer Utama --- */
+.main-footer {
+  width: 100%;
+  background-color: #0d1b2a; /* Warna biru gelap pekat */
+  color: #ffffff;
+}
+
+/* --- Bagian Atas (Flexbox untuk Kolom) --- */
+.footer-top {
+  display: flex;
+  justify-content: space-between; /* Membuat jarak antar kolom otomatis rata */
+  flex-wrap: wrap; /* Agar responsif jika dibuka di HP, kolom akan turun ke bawah */
+  padding: 60px 8%; /* Jarak dalam (atas-bawah, kanan-kiri) */
+}
+
+/* --- Gaya Per Kolom --- */
+.footer-col {
+  flex: 1; /* Membuat setiap kolom membagi ruang sama rata */
+  min-width: 20px; /* Batas minimum lebar kolom sebelum patah/turun di layar kecil */
+  margin-bottom: 20px;
+}
+
+.footer-col h3 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.footer-col p {
+  color: #d1d5db;
+  line-height: 1.6;
+}
+
+.footer-col .slogan {
+  font-size: 15px;
+  color: #9ca3af;
+}
+
+/* --- Gaya untuk List Menu --- */
+.footer-col ul {
+  list-style: none; /* Menghilangkan bullet point bawaan */
+}
+
+.footer-col ul li {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  color: #d1d5db;
+  text-decoration: none; /* Menghilangkan garis bawah link */
+  transition: 0.3s;
+}
+
+.footer-col ul li a:hover {
+  color: #3b82f6; /* Warna berubah saat kursor diarahkan */
+}
+
+/* --- Gaya untuk Sosial Media --- */
+.social-icons {
+  margin-top: 15px;
+}
+
+.social-icons a {
+  color: #ffffff;
+  font-size: 20px;
+  margin-right: 15px;
+  text-decoration: none;
+}
+
+/* --- Bagian Bawah (Copyright) --- */
+.footer-bottom {
+  background-color: #0a141d; /* Warna biru sedikit lebih gelap dari atas */
+  text-align: center;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1); /* Garis tipis pembatas */
+}
+
+.footer-bottom p {
+  font-size: 14px;
+  color: #9ca3af;
+}

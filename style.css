@@ -270,11 +270,7 @@ div.sambutan1  {
 /* footer */
 
 /* --- Reset dasar agar full width tanpa celah --- */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+
 
 
 /* --- Container Footer Utama --- */
@@ -354,7 +350,3 @@ div.sambutan1  {
   border-top: 1px solid rgba(255, 255, 255, 0.1); /* Garis tipis pembatas */
 }
 
-.footer-bottom p {
-  font-size: 14px;
-  color: #9ca3af;
-}

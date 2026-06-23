@@ -285,7 +285,6 @@ div.sambutan1  {
   background-color: #1d74d1; /* Warna biru gelap pekat */
   color: #ffffff;
   text-align:left;
-  justify-content:space-evenly;
 }
 
 /* --- Bagian Atas (Flexbox untuk Kolom) --- */
@@ -350,13 +349,12 @@ div.sambutan1  {
   font-size: 20px;
   margin-right: 15px;
   text-decoration: none;
-  text-align:justify;
   margin-left:10px;
 }
 
 /* --- Bagian Bawah (Copyright) --- */
 .footer-bottom {
-  background-color: #0a141d; /* Warna biru sedikit lebih gelap dari atas */
+  background-color:black; /* Warna biru sedikit lebih gelap dari atas */
   text-align: center;
   padding: 10px 0;
   border-top: 1px solid rgba(255, 255, 255, 0.1); /* Garis tipis pembatas */

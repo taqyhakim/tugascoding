@@ -176,11 +176,13 @@ div.sambutan1  {
     background-color:#121358;
     border:none;
     box-shadow:0 4px 8px grey;
+    justify-content: center;
+    margin-left:30px;
 }
 
 .ukuran-card1 img {
     height:auto;
-    width:60px;
+    width:100px;
     border-radius:10px;
     margin-bottom:15px;
     border:none;
@@ -188,7 +190,7 @@ div.sambutan1  {
 
 .berjajar {
     display:flex;
-    gap:20px;
+    gap:10px;
     margin:100px;
 }
 
@@ -219,11 +221,12 @@ div.sambutan1  {
 .coursel {
     margin:100px auto;
     width:90%;
-    border:5px solid black;
+    border:5px solid rgb(37, 128, 189);
     display:flex;
-    overflow-x: auto;
+    /* overflow-x: auto; */
     gap: 1em;
     border-radius:10px;
+    
 }
 
 .coursel::-webkit-scrollbar {
@@ -234,37 +237,40 @@ div.sambutan1  {
     display:flex;
     align-items:center;
     justify-content:center;
-    gap: 1em;
+    gap:10px;
     animation: spin 30s infinite linear;
 }
 
 .card {
     flex:0 0 5em;
-    height:5em;
-    padding: 1em;
-    background-color:cornflowerblue;
+    height:6em;
+    padding:20px;
+    background-color:#121358;
     font-size:3rem;
     border-radius: .2em;
     text-align:center;
     align-content:center;
 }
 
-@keyframes spin {
+/* @keyframes spin {
     from {translate : 0;}
     to {translate :-100%;}
-}
+} */
 
 .group img {
-    width:100%;
-    height:100%;
+    width:200px;
+    height:200px;
     object-fit:cover;
     border-radius: .2em;
+    margin-top:5px;
 }
 
-.group img p {
-    position:absolute;
-    font-size: 20px;
-    font-weight:bold;
+.group p {
+    font-size:20px;
+    color:#fff;
+    padding:0;
+    margin-top:0;
+
 }
 
 /* footer */
@@ -276,8 +282,10 @@ div.sambutan1  {
 /* --- Container Footer Utama --- */
 .main-footer {
   width: 100%;
-  background-color: #0d1b2a; /* Warna biru gelap pekat */
+  background-color: #1d74d1; /* Warna biru gelap pekat */
   color: #ffffff;
+  text-align:left;
+  justify-content:space-evenly;
 }
 
 /* --- Bagian Atas (Flexbox untuk Kolom) --- */
@@ -291,14 +299,15 @@ div.sambutan1  {
 /* --- Gaya Per Kolom --- */
 .footer-col {
   flex: 1; /* Membuat setiap kolom membagi ruang sama rata */
-  min-width: 20px; /* Batas minimum lebar kolom sebelum patah/turun di layar kecil */
+  min-width: 250px; /* Batas minimum lebar kolom sebelum patah/turun di layar kecil */
   margin-bottom: 20px;
 }
 
 .footer-col h3 {
   font-size: 22px;
   font-weight: 600;
-  margin-bottom: 20px;
+  margin-bottom:10px;
+  margin:39px;
 }
 
 .footer-col p {
@@ -333,6 +342,7 @@ div.sambutan1  {
 /* --- Gaya untuk Sosial Media --- */
 .social-icons {
   margin-top: 15px;
+  margin-left:30px;
 }
 
 .social-icons a {
@@ -340,6 +350,8 @@ div.sambutan1  {
   font-size: 20px;
   margin-right: 15px;
   text-decoration: none;
+  text-align:justify;
+  margin-left:10px;
 }
 
 /* --- Bagian Bawah (Copyright) --- */
